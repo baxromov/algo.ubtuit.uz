@@ -20,12 +20,12 @@
 #         print(i)
 
 # 150
-# r = ''
-# for i in input().split():
-#     if i.lower().startswith("info"):
-#         r += i + ' '
-# print(r.strip())
-
+# s = input().split()
+# word = ''
+# for i in s:
+#     if 'info' in i.lower():
+#         word += i + ' '
+# print(word.strip())
 # 151
 # a = ['a', 'o', 'i', 'e', 'u']
 # count = 0
@@ -112,3 +112,62 @@
 #     else:
 #         t += 1
 # print(j * t)
+
+# 159
+# s = input().split()
+# count = 0
+# for i in s:
+#     if i.lower().startswith("a") and i.lower().endswith("b"):
+#         count += 1
+#
+# print(count)
+
+# 160
+# print(input().swapcase())
+
+# 161
+
+# def multiple_input():
+#     i = int(input())
+#     s = input()
+#     return i, s
+#
+# i, s = multiple_input()
+# d = s.split()
+# data = 'ASSALOM'
+# for item in d:
+#     index = data.find(item)
+#     if index != -1:
+#         data = data[:index] + data[index + 1:]
+#
+# if data:
+#     print("NO")
+# else:
+#     print("YES")
+
+# 162
+# def multiple_input():
+#     i = int(input())
+#     s = input()
+#     return i, s
+#
+# print(multiple_input()[1].replace('$', ''))
+
+# 163
+# print(max(map(lambda x: (len(x), x), input().replace("’", "").split()))[1])
+
+# 164
+# def multiple_input():
+#     s = input()
+#     l, r = map(int, input().split())
+#     return s, l, r
+#
+# s, l, r = multiple_input()
+# if r > l:
+#     print(s[l - 1:r])
+# else:
+#     w = s[::-1]
+#     L = len(w) - l
+#     R = len(w) - r
+#     print(w[L:R+1])
+
